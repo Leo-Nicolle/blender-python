@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y python3.5 python3.5-dev libjpeg-dev cur
     rm -rf /var/lib/apt/lists/*
 RUN cd /tmp && \
     mkdir blender && \
-    curl -SL http://mirror.cs.umn.edu/blender.org/source/blender-2.78a.tar.gz -o blender.tar.gz && \
+    curl -SL http://mirror.cs.umn.edu/blender.org/source/blender-2.79a.tar.gz -o blender.tar.gz && \
     tar xzf blender.tar.gz -C blender --strip-components=1 && \
     rm blender.tar.gz
